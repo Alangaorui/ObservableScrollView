@@ -13,13 +13,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-
         android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
 
             <TextView
                 android:id="@+id/tv_main_topContent"
@@ -29,15 +29,25 @@
                 android:gravity="center"
                 android:text="我是头部"
                 android:textSize="22sp" />
-            <!--<com.grant.observablescrollview.MyListView-->
-                <!--android:id="@+id/list_view"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </com.youth.banner.Banner>
+            </LinearLayout>
         </LinearLayout>
+
+
+
+
 
     </com.grant.observablescrollview.ObservableScrollView>
 
 
     <include layout="@layout/include_header" />
+
 
 </RelativeLayout>
